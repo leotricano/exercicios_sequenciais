@@ -20,7 +20,8 @@ public class ExerciciosSequenciais {
     public static void main(String[] args) {
         //CalcularMediaPonderada();
         //CalcularDesconto();
-        Poupanca();
+        //Poupanca();
+        CalcularValorCofre();
         
         
     }
@@ -104,9 +105,19 @@ public class ExerciciosSequenciais {
     }
     // FAZER EM CASA 
     static void CalcularValorCofre(){
+        Scanner scan = new Scanner(System.in);
         double qtdDolares = 0.0d;
         double cotacaoDolar = 0.0d;
         double valorReais = 0.0d;
+        
+        System.out.println("Qual a quantidade de dolares no cofre? ");
+        qtdDolares = scan.nextDouble();
+        System.out.println("Qual a cotação do dolar no dia? ");
+        cotacaoDolar = scan.nextDouble();
+        
+        valorReais = qtdDolares * cotacaoDolar;
+        
+        System.out.printf("Valor: R$%.2f\n", valorReais);
         
         
     }
