@@ -21,7 +21,8 @@ public class ExerciciosSequenciais {
         //CalcularMediaPonderada();
         //CalcularDesconto();
         //Poupanca();
-        CalcularValorCofre();
+        //CalcularValorCofre();
+        CalcularTemperatura();
         
         
     }
@@ -121,5 +122,21 @@ public class ExerciciosSequenciais {
         
         
     }
+    static void CalcularTemperatura(){
+        Scanner scan = new Scanner(System.in);
+        double tempCelcius = 0.0d;
+        double tempFahrenheit = 0.0d;
+        
+        System.out.println("Qual a temperatura em graus Celcius? ");
+        tempCelcius = scan.nextDouble();
+        
+        
+        tempFahrenheit = (9*tempCelcius+160) / 5;
+        
+        System.out.printf("Temperatura convertida em Fahrenheit: %.2f °F\n", tempFahrenheit);
+        
+        
+    }
+    
 
 }
